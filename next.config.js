@@ -8,7 +8,12 @@ const withNextra = require('nextra')({
     defaultShowCopyCode: true,
   })
    
-  module.exports = withNextra()
+  module.exports = withNextra({
+	i18n: {
+    locales: ['en-US', 'zh-Hant'],
+    defaultLocale: 'en-US'
+  }
+  })
    
   // If you have other Next.js configurations, you can pass them as the parameter:
   // module.exports = withNextra({ /* other next.js config */ })
